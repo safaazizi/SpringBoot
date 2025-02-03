@@ -21,6 +21,6 @@ public class Restaurant {
     @ManyToOne
     @JoinColumn(name = "idChaineResturation")
     private ChaineRestauration chaineRestauration;
-    @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany
     List<Menu> menusRestaurant;
 }

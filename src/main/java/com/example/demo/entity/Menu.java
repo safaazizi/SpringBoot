@@ -19,15 +19,13 @@ public class Menu {
     @ManyToMany(mappedBy = "menus")
     List<ChefCuisinier> chefs;
 
-    @ManyToOne
-    @JoinColumn(name = "idRestaurant")
-     private Restaurant restaurant;
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idMenu;
     private String libelleMenu;
-    @Enumerated
+    @Enumerated(EnumType.STRING) //string maaneha yekhou esemi el enumarates || ordinaire 0.1.2
     private TypeMenu typeMenu;
     private Float prixTotal;
 

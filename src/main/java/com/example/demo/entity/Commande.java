@@ -16,7 +16,7 @@ import java.util.Date;
 
 public class Commande {
     @ManyToOne
-    @JoinColumn(name = "idClient", nullable = false)
+    @JoinColumn(name = "idClient")
     private Client client;
 
     @ManyToOne
@@ -30,7 +30,7 @@ public class Commande {
     @Temporal(TemporalType.DATE)
     private Date dateCommande;
     private Integer pourcentageRemise;
-    private float totalCommande;
+    private Float totalCommande;
     private Long note;
 
 }

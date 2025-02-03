@@ -26,11 +26,6 @@ public class ChefCuisinier {
     private TypeChef typeChef;
 
     @ManyToMany
-    @JoinTable(
-            name = "ChefMenu",
-            joinColumns = @JoinColumn(name="idChefCuisinier"),
-            inverseJoinColumns = @JoinColumn(name = "idMenu")
-            )
     private List <Menu> menus;
 
 

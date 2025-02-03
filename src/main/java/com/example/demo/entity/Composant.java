@@ -17,6 +17,7 @@ public class Composant {
     private String nomComposant;
     private Float prix;
 
-    @OneToOne(mappedBy = "composant", cascade = CascadeType.ALL)
+    @OneToOne //besh nakes aala rouhy el details f base de donne
+    //ki tabda unidirectionnel besh neproteji el table lokhra
     private DetailComposant details;
 }

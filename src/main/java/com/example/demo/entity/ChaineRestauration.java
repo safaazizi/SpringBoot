@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -18,8 +18,8 @@ public class ChaineRestauration {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idChaineRestauration;
     private String libelle;
-    @Temporal(TemporalType.DATE)
-    private Date dateCreation;
+    //@Temporal(TemporalType.DATE) ki nestaamlou el Date
+    private LocalDate dateCreation;
     @OneToMany(mappedBy = "chaineRestauration")
     List<Restaurant> resturants;
 }

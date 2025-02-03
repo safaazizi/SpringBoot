@@ -17,7 +17,5 @@ public class DetailComposant {
     private Long idDetailComposant;
     private Float imc;
     private TypeComposant typeComposant;
-    @OneToOne
-    @JoinColumn(name ="idComposant" )
-   private  Composant composant;
+
 }
