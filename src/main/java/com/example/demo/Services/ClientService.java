@@ -2,10 +2,13 @@ package com.example.demo.Services;
 
 import com.example.demo.entity.Client;
 import com.example.demo.Repositories.ClientRepository;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
+@AllArgsConstructor
 @Slf4j
 public class ClientService implements IClientService{
     ClientRepository clientRepository;

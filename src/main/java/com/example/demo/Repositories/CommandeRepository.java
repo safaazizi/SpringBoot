@@ -14,7 +14,7 @@ public interface CommandeRepository extends JpaRepository<Commande,Long> {
     List<Commande> findByClientIdClientAndDateCommandeBetween(Long id_client, LocalDate from, LocalDate to);
 
     //1.3 liste des commandes dont la date commande entre deux dates ordonné par note  croissant
-    List<Commande> orderByNoteClientIdClientAndDateCommandeBetween(Long id_client, LocalDate from, LocalDate to);
+    //List<Commande> orderByNoteClientIdClientAndDateCommandeBetween(Long id_client, LocalDate from, LocalDate to);
 
 
 

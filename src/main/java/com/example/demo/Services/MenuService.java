@@ -2,9 +2,12 @@ package com.example.demo.Services;
 
 import com.example.demo.entity.Menu;
 import com.example.demo.Repositories.MenuRepository;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
+@AllArgsConstructor
 public class MenuService implements IMenuService{
     MenuRepository menuRepository;
     @Override

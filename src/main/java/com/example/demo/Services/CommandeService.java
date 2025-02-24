@@ -2,8 +2,12 @@ package com.example.demo.Services;
 
 import com.example.demo.entity.Commande;
 import com.example.demo.Repositories.CommandeRepository;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+@Service
+@AllArgsConstructor
 
 public class CommandeService implements ICommandeService{
 
